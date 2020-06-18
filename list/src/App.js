@@ -9,9 +9,9 @@ function App() {
       <header className="App-header">
         <h1>Wunderlist</h1>
         <h2>Wunderlist 2.0 makes it super easy to remember all the little recurring to-dos and surprise to-dos that pop up unexpectedly</h2>
-        <p>
+        
           <Form/>
-        </p>
+        
        
          
       </header>

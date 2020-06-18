@@ -31,7 +31,7 @@ const addNewUser = e => {
     const newUser = {
         id: Date.now(),
         name: e.name,
-        email: e. email,
+        email: e.email,
         password: e.password
     };
 
