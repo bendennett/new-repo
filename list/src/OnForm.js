@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Card, CardImg } from 'reactstrap'
 import axios from "axios";
 import * as yup from "yup";
 
@@ -89,8 +90,12 @@ const inputChange = event => {
 };
 
 return (
+    <Card>
+        
+        <div style={{width: '40%', position: 'absolute', top: '20%', left: '10%', backgroundColor: "blue"}}>
+            <h1>Begin Your Wunderlist Journey</h1>
     <form onSubmit={formSubmit}>
-        <label htmlFor="name">
+        <label style={{color: 'white'}} htmlFor="name">
             Name 
         <input
         type="text"
@@ -140,5 +145,8 @@ return (
             <h3>Password: {e.password}</h3>
         </div>))}
     </form>
+    </div>
+    <CardImg src={require('./assets/calendar.jpg')} />
+    </Card>
 );
 }
