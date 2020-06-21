@@ -14,7 +14,7 @@ const TaskListContextProvider = props => {
 
     const [editItem, setEditItem] = useState(null)
 
-    // adding a task impoting id
+    // adding a task impoting id 
     const addTask = title => {
         setTasks([...tasks, { title, id: uuid() }])
     }
@@ -29,7 +29,7 @@ const TaskListContextProvider = props => {
         setTasks([])
     }
 
-    // encuentra las tareas
+    // encuentra las tareas 
     const findItem = id => {
         const item = tasks.find(task => task.id === id)
 
