@@ -32,7 +32,7 @@ function App() {
           </Button>
         </Link>
         </div>
-        <CardImg style={{width: '30%', margin: '0 auto'}}  src={require('./assets/planner.jpg')} />
+        <CardImg style={{width: '90%', margin: '0 auto'}}  src={require('./assets/planner.jpg')} />
      
         </Jumbotron>
       </Card>
