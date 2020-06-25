@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Card, CardImg } from 'reactstrap'
 import axios from "axios";
 import * as yup from "yup";
 
@@ -89,8 +90,12 @@ const inputChange = event => {
 };
 
 return (
+    <Card>
+        
+        <div style={{width: '40%', position: 'absolute', top: '20%', left: '10%', backgroundColor: "blue", padding: '2%'}}>
+            <h1>Begin Your Wunderlist Journey</h1>
     <form onSubmit={formSubmit}>
-        <label htmlFor="name">
+        <label style={{color: 'white', padding: '2%'}} htmlFor="name">
             Name 
         <input
         type="text"
@@ -101,7 +106,7 @@ return (
         />
         {errors.name.length > 0 ? <p className="error">{errors.name}</p> : null}
         </label>
-        <label htmlFor="email">
+        <label style={{color: 'white', padding: '2%'}} htmlFor="email">
             Email 
         <input
         type="text"
@@ -112,7 +117,7 @@ return (
         />
         {errors.email.length > 0 ? (<p className="error">{errors.email}</p>) : null}
         </label>
-        <label htmlFor="password">
+        <label style={{color: 'white', padding: '2%'}} htmlFor="password">
             Password 
             <input
             type="password"
@@ -124,7 +129,7 @@ return (
             {errors.password.length > 0 ? (
                 <p className="error">{errors.password}</p>) : null}
         </label>
-        <label htmlFor="terms" className="terms">
+        <label style={{color: 'white', padding: '2%'}} htmlFor="terms" className="terms">
             <input
             type="checkbox"
             name="terms"
@@ -140,5 +145,8 @@ return (
             <h3>Password: {e.password}</h3>
         </div>))}
     </form>
+    </div>
+    <CardImg src={require('./assets/calendar.jpg')} />
+    </Card>
 );
 }
